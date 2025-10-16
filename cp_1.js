@@ -107,4 +107,28 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // If valid, show feedback and reset form
+    
+    alert(`Thank you, ${username.value}! Your feedback has been submitted.`);
+
+    const entry = document.createElement('div');
+    entry.innerHTML = `
+      <strong>${username.value}</strong> (${email.value})<br>
+      <p>${comments.value}</p><hr>
+    `;
+    feedbackDisplay.appendChild(entry);
+    entry.scrollIntoView({ behavior: 'smooth' });
+
+    form.reset();
+    charCount.textContent = 'Characters: 0';
+  });
+
+  // Stop form click events from bubbling if needed
+  form.addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+
+  // Background click handler 
+  document.body.addEventListener('click', function () {
+    console.log('Background clicked');
+  });
 });
