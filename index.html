@@ -1,35 +1,30 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <header>
-        <meta charset="UTF-8">
-        <meta title="User Feedback Form">
-        <script defer src="cp_1.js"></script>
-        <link rel="stylesheet" href="style.css">
-        
-        <meta title="viewport" width="device.width">
-    </header>
+    <script defer src="cp_1.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-        <h1>User Feedback</h1>
+<body>
+    <h1>User Feedback</h1>
 
-        <form id="feedbackForm">
-            <label for="username">Name:</label>
-            <input type="text" name="username" placeholder="Enter Your Name">
+    <form id="feedbackForm" autocomplete="on">
+        <label for="username">Name:</label>
+        <input type="text" name="username" id="username" placeholder="Enter Your Name" autocomplete="name">
 
-            <label for="email">Email:</label>
-            <input type="text" name="email" placeholder="Enter Your Email">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" autocomplete="email">
 
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" rows="4" placeholder="Write your comments"></textarea>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Write your comments" autocomplete="off"></textarea>
 
-            <div id="charCount">Characters: 0</div>
+        <div id="charCount">Characters: 0</div>
 
-            <button type="submit">Submit!</button>
-            
-        </form>
-        
-        
-
-    </body>
+        <button type="submit">Submit!</button>
+    </form>
+</body>
 </html>
