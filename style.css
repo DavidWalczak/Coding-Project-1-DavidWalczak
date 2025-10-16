@@ -1,11 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 30px;
+  margin: 0;
   background-color: #f0f4f8;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1, h2 {
   color: #333;
+  text-align: center;
 }
 
 form {
@@ -14,6 +20,8 @@ form {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   max-width: 400px;
+  width: 90%;
+  text-align: left;
 }
 
 label {
@@ -37,6 +45,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
 
 button:hover {
@@ -51,6 +60,7 @@ button:hover {
   border-radius: 4px;
   position: absolute;
   font-size: 0.85em;
+  z-index: 10;
 }
 
 .error {
@@ -59,8 +69,11 @@ button:hover {
 }
 
 #feedback-display {
-  margin-top: 30px;
+  margin-top: 20px;
   background: #fff;
   padding: 15px;
   border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
