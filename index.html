@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lan="en">
+
     <header>
+        <meta charset="UTF-8">
         <meta title="User Feedback Form">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="cp_1.js"></script>
         <meta title="viewport" width="device.width">
     </header>
+
+    <body>
+        <h1>User Feedback</h1>
+
+        <form id="feedbackForm">
+            <label for="username">Name:</label>
+            <input type="text" name="username" placeholder="Enter Your Name">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Enter Your Email">
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Write your comments"></textarea>
+
+            <div id="charCount">Characters: 0</div>
+
+            <button type="submit">Submit!</button>
+            
+        </form>
+
+
+    </body>
 </html>
